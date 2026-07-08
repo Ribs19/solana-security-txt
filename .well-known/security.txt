@@ -1,0 +1,6 @@
+Contact: rvbruno19@icloud.com
+Expires: 2027-07-08T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://github.com/Ribs19/solana-security-txt/.well-known/security.txt
+Policy: https://github.com/Ribs19/solana-security-txt/SECURITY.md
+Acknowledgments: https://github.com/Ribs19/solana-security-txt/ACKNOWLEDGMENTS.md
