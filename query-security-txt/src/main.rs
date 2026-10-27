@@ -77,7 +77,7 @@ fn query_remote(url: &str, pubkey: Pubkey) -> Result<()> {
         .get_account(&program_data_address)
         .map_err(|_| eyre!("Couldn't fetch program data account"))?;
 
-    let offset = UpgradeableLoaderState::programdata_data_offset()?;
+    let offset = UpgradeableLoaderState::size_of_programdata_metadata();
     if program_data_account.data.len() < offset {
         return Err(eyre!("Account is too small to be a program data account"));
     }
