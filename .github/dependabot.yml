@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    ignore:
+      # Pinned to <4 by solana-program/solana-sdk 1.x and anchor-lang 0.22.1;
+      # a security update to >=4.1.3 is not resolvable without a major Solana upgrade.
+      - dependency-name: "curve25519-dalek"
